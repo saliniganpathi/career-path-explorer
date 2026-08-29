@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+save pann
+<body>
+
+    <div class="container">
+
+        <h1>🎓 Career Path Explorer</h1>
+        <p>Find the career paths that best match your skills and interests.</p>
+
+        <div class="form-section">
+
+            <h2>Student Skills</h2>
+
+            <label>
+                <input type="checkbox" value="programming" class="skill">
+                Programming
+            </label>
+
+            <label>
+                <input type="checkbox" value="problem-solving" class="skill">
+                Problem Solving
+            </label>
+
+            <label>
+                <input type="checkbox" value="communication" class="skill">
+                Communication
+            </label>
+
+            <label>
+                <input type="checkbox" value="creativity" class="skill">
+                Creativity
+            </label>
+
+            <label>
+                <input type="checkbox" value="leadership" class="skill">
+                Leadership
+            </label>
+
+
+            <h2>Interest</h2>
+
+            <select id="interest">
+                <option value="">Select Interest</option>
+                <option value="technology">Technology</option>
+                <option value="business">Business</option>
+                <option value="design">Design</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="finance">Finance</option>
+            </select>
+
+
+            <h2>Preferred Domain</h2>
+
+            <select id="domain">
+                <option value="">Select Domain</option>
+                <option value="software">Software</option>
+                <option value="data">Data</option>
+                <option value="design">Design</option>
+                <option value="business">Business</option>
+                <option value="healthcare">Healthcare</option>
+            </select>
+
+
+            <h2>Academic Strength</h2>
+
+            <select id="academic">
+                <option value="">Select Academic Strength</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="biology">Biology</option>
+                <option value="commerce">Commerce</option>
+                <option value="english">English</option>
+            </select>
+
+            <br><br>
+
+            <button onclick="recommendCareers()">
+                🔍 Recommend Careers
+            </button>
+
+        </div>
+
+        <div id="results"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
